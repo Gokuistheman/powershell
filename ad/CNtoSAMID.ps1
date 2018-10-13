@@ -1,0 +1,2 @@
+﻿forEach($Member in Get-Content u:\text.txt) {Get-ADUser -Filter * -Properties Displayname | Where-Object { $_.Displayname -eq $Member } `
+| ft -HideTableHeaders SamAccountName | Out-File -Append u:\csv }
