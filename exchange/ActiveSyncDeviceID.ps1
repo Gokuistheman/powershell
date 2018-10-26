@@ -1,7 +1,7 @@
 ﻿CLS
 "Device ID Update"
 ""
-"Enter the SAMID (i.e. amis1234) of the user whose mailbox you wish to update"
+"Enter the SAMID of the user whose mailbox you wish to update"
 ""
 $user = Read-Host -Prompt "enter username"
 

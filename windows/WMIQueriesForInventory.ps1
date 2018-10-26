@@ -1,4 +1,4 @@
-﻿$COMPUTERS = Import-Csv '\\cinnamon\amis1206\My Documents\Projects\Documentation Project\COWindowsServerList.csv'
+﻿$COMPUTERS = Import-Csv '\\cifs\share\WindowsServerList.csv'
 $SPECS = $null
 $ErrorActionPreference = "SilentlyContinue"
 
@@ -31,7 +31,7 @@ IF($TEST -ne $null)
     $SPECS | Add-Member -NotePropertyName 'Service Pack Major Version' -NotePropertyValue $OS.ServicePackMajorVersion
     $SPECS | Add-Member -NotePropertyName 'Service Pack Minor Version' -NotePropertyValue $OS.ServicePackMinorVersion
     $SPECS | ft -AutoSize
-    $SPECS | Export-Csv '\\cinnamon\amis1206\My Documents\Projects\Documentation Project\COWindowsServerInfov2.csv' -Append
+    $SPECS | Export-Csv '\\cifs\share\WindowsServerInfov2.csv' -Append
     echo $SPECS
     }
     ELSE

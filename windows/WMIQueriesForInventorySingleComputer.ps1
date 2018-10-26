@@ -2,7 +2,7 @@
 $ErrorActionPreference = "SilentlyContinue"
 
 $COMPUTER = Read-Host "Computer Name"
-#$TEST = Write-Host "Aaron Testing"#Test-Connection $COMPUTER -Count 1
+#$TEST = Write-Host "Testing"#Test-Connection $COMPUTER -Count 1
 Start-Sleep -Seconds 1
 
 #IF($TEST -eq $null)

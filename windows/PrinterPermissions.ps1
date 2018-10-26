@@ -1,3 +1,3 @@
-﻿$Printer = "amisprt8"
+﻿$Printer = "<printername>"
 
-C:\windows\System32\subinacl.exe "/printer \\shamrockfoods\$Printer"
+C:\windows\System32\subinacl.exe "/printer \\<your.company>\$Printer"

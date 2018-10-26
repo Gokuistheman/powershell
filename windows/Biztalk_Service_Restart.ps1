@@ -1,8 +1,8 @@
 ﻿ #Restarts Biztalk Service Remotely.
  
  #Array of Servers
- $SERVERS = @("BT10PROD1",
-              "BT10PROD2")
+ $SERVERS = @("<server.name>",
+              "<server.name>")
 CLS
 #Main Exeuction Loop
 Foreach($SERVER in $SERVERS)
